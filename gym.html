@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessX</title>
+</head>
+
+<style>
+    * {
+        font-family: 'Baloo Bhai', cursive;
+    }
+
+    .background {
+        background-image: url('https://img.freepik.com/premium-photo/beautiful-fitness-woman-working-out-with-dumbbells-blue-light-background_264277-1263.jpg?w=2000');
+        background-size: 100%;
+        background-color: rgb(27, 195, 236);
+        height: 1200px;
+        width:1500px;
+    }
+
+
+    .left {
+        display: inline-block;
+        position: block;
+        left: 10px;
+        top: 50px;
+        color:white;
+        text-shadow: 2px 2px black;
+    }
+
+    .left img {
+        display: block;
+        position: absolute;
+        top:20px;
+        width:5%;
+        height:5%;
+        right:94%;
+    }
+
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+        
+    }
+
+    .mid {
+        margin: 39px auto;
+        display: inline-block;
+        text-shadow: 2px 2px black;
+    }
+
+
+    .heading {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block ;
+        font-size:20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active{
+        text-decoration: underline;
+        color: rgb(218, 17, 249);
+    }
+
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .right {
+
+        right: 34px;
+        display: inline-block;
+        position: absolute;
+        top: 34px;
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        color: rgb(251, 59, 251);
+    }
+
+    .container h1 {
+        text-align: center;
+        color: white;
+        text-shadow: 3px 3px black;
+    }
+
+    .container {
+        position: absolute;
+    left: 66px;
+    border: 2px solid white;
+    width: 913px;
+    height: 600px;
+    border-radius: 28px;
+    }
+
+    .formgroup {
+        margin: 20px 30px;
+        padding: 10px;
+    }
+
+    .formgroup input {
+        width: 200px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 10px auto;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+
+    .container button {
+        display: block;
+        margin: auto;
+        width: 10%;
+    }
+</style>
+
+<body>
+    <div class="background">
+        <header class="heading">
+            <nav>
+                <div class="left">
+                    <img src="https://www.freepnglogos.com/uploads/dumbbell-png/dumbbell-sponsored-native-company-native-desc-6.png" alt="">
+                    <div><u>FitnessX</u></div>
+                </div>
+
+                <div class="mid">
+                    <ul class="navbar">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Fitness Calculator</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="right">
+                    <button class="btn">Call Us Now</button>
+                    <button class="btn">Email Us</button>
+                </div>
+            </nav>
+        </header>
+
+
+
+        <div class="container">
+
+            <h1><u>Join The Best Gym In NCR Region!</u></h1>
+            <form action="noaction.php" method="get">
+
+                <div class="formgroup">
+                    <input type="text" placeholder="Name">
+                </div>
+
+                <div class="formgroup">
+                    <input type="text" placeholder="Age">
+                </div>
+
+                <div class="formgroup">
+                    <input type="text" placeholder="Gender">
+                </div>
+
+                <div class="formgroup">
+                    <input type="text" placeholder="Phone Number">
+                </div>
+
+                <div class="formgroup">
+                    <input type="text" placeholder="Email id">
+                </div>
+
+                <button class="btn">Submit</button>
+
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
